@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shufschmid/solar-manager.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shufschmid/solar-manager/issues"
+  },
+  "homepage": "https://github.com/shufschmid/solar-manager#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.9"
+  }
 }

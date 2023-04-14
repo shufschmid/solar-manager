@@ -2,7 +2,7 @@ const fetch = require('node-fetch')
 exports.handler = async function() {
   try {
     const response = await fetch('https://cloud.solar-manager.ch/v1/stream/gateway/0000000090480A4F', {
-      headers: { Accept: 'application/json',  'Authorization': "Basic bGlzaHVmc2NobWlkQGdtYWlsLmNvbTphZXQ2ZXQ0bVNNUjhUcnA=" },
+      headers: { Accept: 'application/json',  'Authorization': `Basic ${process.env.AUTH}` },
     })
     if (!response.ok) {
       // NOT res.status >= 200 && res.status < 300
